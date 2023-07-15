@@ -6,7 +6,7 @@ while true; do {
     echo $url
     url=${url//"https "/""}
     url=${url//": "/""};
-    echo $url
+    echo $url > neiwangyun.txt
     git add .
     git commit -m "update https"
     git push
